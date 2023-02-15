@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - include:
+      file: db.changelog-2.0.1.sql
+      relativeToChangelogFile: true
+  - include:
+      file: db.changelog-2.10.1.sql
+      relativeToChangelogFile: true
+  - include:
+      file: db.changelog-2.16.1.sql
+      relativeToChangelogFile: true
+
+
