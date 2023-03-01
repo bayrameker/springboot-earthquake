@@ -1,4 +1,4 @@
-package com.joyful.earthquakes.config;
+package com.scriptchief.earthquakes.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;

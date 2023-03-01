@@ -1,4 +1,4 @@
-package com.joyful.earthquakes.util;
+package com.scriptchief.earthquakes.util;
 
 public class ParserConstants {
     public static final String FEED_TAG = "feed";

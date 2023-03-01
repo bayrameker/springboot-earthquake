@@ -1,4 +1,4 @@
-package com.joyful.earthquakes;
+package com.scriptchief.earthquakes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

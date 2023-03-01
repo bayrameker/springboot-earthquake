@@ -1,8 +1,8 @@
-package com.joyful.earthquakes.service;
+package com.scriptchief.earthquakes.service;
 
-import com.joyful.earthquakes.mapper.USGSEventMapper;
-import com.joyful.earthquakes.model.entity.EarthEvent;
-import com.joyful.earthquakes.repository.EarthEventRepository;
+import com.scriptchief.earthquakes.mapper.USGSEventMapper;
+import com.scriptchief.earthquakes.model.entity.EarthEvent;
+import com.scriptchief.earthquakes.util.ParserConstants;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.jsoup.Jsoup;
@@ -13,17 +13,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.time.ZoneId;
-import java.time.ZonedDateTime;
 import java.util.*;
-import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
 
-import static com.joyful.earthquakes.util.ConnectionConstants.*;
-import static com.joyful.earthquakes.util.ConnectionConstants.REQUESTER;
-import static com.joyful.earthquakes.util.ParserConstants.ENTRY_TAG;
-import static com.joyful.earthquakes.util.ParserConstants.FEED_TAG;
+import static com.scriptchief.earthquakes.util.ConnectionConstants.*;
+import static com.scriptchief.earthquakes.util.ConnectionConstants.REQUESTER;
 import static java.util.Collections.singletonList;
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toList;
@@ -50,8 +44,8 @@ public class USGSParserService {
             throw new RuntimeException(e);
         }
 
-        final Element feed = doc.selectFirst(FEED_TAG);
-        final Elements entries = feed.select(ENTRY_TAG);
+        final Element feed = doc.selectFirst(ParserConstants.FEED_TAG);
+        final Elements entries = feed.select(ParserConstants.ENTRY_TAG);
 
         final HashMap<String, List<EarthEvent>> locationNewEvents = new HashMap<>();
         for (Element entry : entries) {

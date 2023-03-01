@@ -1,4 +1,4 @@
-package com.joyful.earthquakes.model.dto;
+package com.scriptchief.earthquakes.model.dto;
 
 import lombok.Builder;
 import lombok.Value;

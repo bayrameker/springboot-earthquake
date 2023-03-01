@@ -1,6 +1,6 @@
-package com.joyful.earthquakes.repository;
+package com.scriptchief.earthquakes.repository;
 
-import com.joyful.earthquakes.model.entity.EarthEvent;
+import com.scriptchief.earthquakes.model.entity.EarthEvent;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

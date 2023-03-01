@@ -1,4 +1,4 @@
-package com.joyful.earthquakes.model;
+package com.scriptchief.earthquakes.model;
 
 public enum LocationType {
     LOCATION,

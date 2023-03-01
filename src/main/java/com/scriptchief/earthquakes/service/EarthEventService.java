@@ -1,12 +1,11 @@
-package com.joyful.earthquakes.service;
+package com.scriptchief.earthquakes.service;
 
-import com.joyful.earthquakes.mapper.EarthEventMapper;
-import com.joyful.earthquakes.model.dto.EarthEventReadDto;
-import com.joyful.earthquakes.model.entity.EarthEvent;
-import com.joyful.earthquakes.repository.EarthEventRepository;
+import com.scriptchief.earthquakes.mapper.EarthEventMapper;
+import com.scriptchief.earthquakes.model.dto.EarthEventReadDto;
+import com.scriptchief.earthquakes.model.entity.EarthEvent;
+import com.scriptchief.earthquakes.repository.EarthEventRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

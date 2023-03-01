@@ -1,4 +1,4 @@
-package com.joyful.earthquakes.model.entity;
+package com.scriptchief.earthquakes.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

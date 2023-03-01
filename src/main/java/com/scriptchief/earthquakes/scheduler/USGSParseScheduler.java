@@ -1,6 +1,6 @@
-package com.joyful.earthquakes.scheduler;
+package com.scriptchief.earthquakes.scheduler;
 
-import com.joyful.earthquakes.service.USGSParserService;
+import com.scriptchief.earthquakes.service.USGSParserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

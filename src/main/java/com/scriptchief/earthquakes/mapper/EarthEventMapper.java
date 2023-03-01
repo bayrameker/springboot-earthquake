@@ -1,16 +1,13 @@
-package com.joyful.earthquakes.mapper;
+package com.scriptchief.earthquakes.mapper;
 
-import com.joyful.earthquakes.model.dto.EarthEventReadDto;
-import com.joyful.earthquakes.model.entity.EarthEvent;
+import com.scriptchief.earthquakes.model.dto.EarthEventReadDto;
+import com.scriptchief.earthquakes.model.entity.EarthEvent;
+import com.scriptchief.earthquakes.util.ParserConstants;
 import org.springframework.stereotype.Component;
 
 import java.time.temporal.TemporalUnit;
 import java.util.List;
 
-import static com.joyful.earthquakes.util.ParserConstants.COMMA;
-import static com.joyful.earthquakes.util.ParserConstants.SPACE;
-import static java.time.temporal.ChronoUnit.DAYS;
-import static java.time.temporal.ChronoUnit.HOURS;
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toList;
 
@@ -25,7 +22,7 @@ public class EarthEventMapper {
         return sortedEvents.stream()
                 .map(earthEvent -> EarthEventReadDto.builder()
                         .magnitude(String.valueOf(earthEvent.getMagnitude()))
-                        .fullLocation(earthEvent.getRegion() + COMMA + SPACE + earthEvent.getLocation())
+                        .fullLocation(earthEvent.getRegion() + ParserConstants.COMMA + ParserConstants.SPACE + earthEvent.getLocation())
                         .time(earthEvent.getTime().toString())
                         .timeDiff(getTieDiff(earthEvent.getTimeDiffSec()))
 //                        .hourFrequency(getFrequency(earthEvent, sortedEvents, HOURS) + SPACE + "min.")

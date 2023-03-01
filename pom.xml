@@ -21,7 +21,7 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <version-date>${maven.build.timestamp}</version-date>
         <maven.build.timestamp.format>dd-MM-yyyy HH:mm</maven.build.timestamp.format>
-        <exec.mainClass>com.joyful.earthquakes.Launcher</exec.mainClass>
+        <exec.mainClass>com.scriptchief.earthquakes.Launcher</exec.mainClass>
 
         <jsoup.version>1.13.1</jsoup.version>
         <springdoc.version>1.5.12</springdoc.version>

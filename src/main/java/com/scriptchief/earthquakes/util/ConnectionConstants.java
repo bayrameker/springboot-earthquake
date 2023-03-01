@@ -1,4 +1,4 @@
-package com.joyful.earthquakes.util;
+package com.scriptchief.earthquakes.util;
 
 public class ConnectionConstants {
     public static final String NO_SCRIPT_URL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.atom";
